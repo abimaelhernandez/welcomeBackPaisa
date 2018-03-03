@@ -6,13 +6,14 @@ class Thread extends React.Component{
   }
 
   render(){
-    return (<div>
-           {this.props.thread.comment}
-         <button >Reply</button>
-
+    return (
+      <div className="replies">
+        <p>{this.props.thread.comment}</p>
+        <button type="button" class="btn-success btn-md">Reply</button>
       </div>
-    )
+    );
   }
 }
+
 
 export default Thread;

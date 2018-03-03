@@ -1,0 +1,105 @@
+/*# is used for id identification*/
+/*. is used for classnames*/
+body {
+  shape-margin: "rectangle";
+  background: url("/keepCalm&Code.jpg");
+  position: sticky;
+  background-repeat: no-repeat;
+  background-color: #333333;
+  background-position: center top;
+}
+h1{
+  position: absolute;
+  left:150px;
+  top: -70px;
+}
+h2{
+  position: relative;
+  left: 185px;
+  top: 300px;
+  color: white;
+}
+
+.nav{
+  position: absolute;
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 15px 15px 15px 15px;
+  top: -5px;
+}
+a{
+  color:white;
+}
+.replies{
+  position: absolute;
+  top: 270px;
+}
+
+.header {
+  position: relative;
+  font-family: 'Armata';
+  margin-top: 4.2em;
+  margin-left: 5.8em;
+  color: white;
+}
+
+
+.startT {
+  position: relative;
+  font-family: 'Armata';
+  margin-top: 8.2em;
+  margin-left: 48em;
+  color: white;
+}
+
+
+.textAr {
+  font-family: sans-serif;
+  position: relative;
+  width: 960px;
+  height: 202px;
+  margin-top: 1em;
+  margin-left: 7em;
+  top: 328px;
+  left: 125px;
+}
+
+
+.btn-danger {
+  position: relative;
+  margin-left: 65em;
+  margin-top: 1em;
+  top: 285px;
+  left: 185px;
+}
+
+
+.replies {
+  font-family: 'Armata';startT
+  font-size: 20px;
+  margin: 100px;
+  width: 700px;
+  height: 170px;
+  background-color: white;
+  position: relative;
+  left:  250px;
+}
+
+
+.btn-success {
+  position: relative;
+  margin-left: 60em;
+  margin-top: 6em;
+  left: -197px;
+  top:35px;
+}
+
+
+.container-fluid2 {
+  position: relative;
+  font-family: 'Armata';
+  margin-top: 4.2em;
+  margin-left: 8em;
+  color: blue;
+}
