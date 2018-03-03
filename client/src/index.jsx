@@ -1,8 +1,10 @@
-import React from 'react';
+import React , {BrowserRouter} from 'react';
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
 import AddThread from './components/AddThread.jsx';
 import ThreadList from './components/ThreadList.jsx';
+import {Router, Route, Link, Switch, Redirect, IndexRoute,
+browserHistory} from 'react-router'
 
 class App extends React.Component{
   constructor(props){
@@ -17,7 +19,7 @@ class App extends React.Component{
 
   addThread(comment){
     $.ajax({
-      
+
       method:'POST',
       url:'/paisa',
       contentType: 'application/json',
@@ -50,14 +52,20 @@ class App extends React.Component{
 
  render() {
     return (
+    <BrowserRouter>
+
+
       <div>
+        <AddThread addThread={this.addThread} />
 
 
-      <AddThread addThread={this.addThread} />
-      <ThreadList thread={this.state.thread} />
+        <ThreadList thread={this.state.thread} />
 
-  </div>
+      </div>
+    </BrowserRouter>
     );
   }
 }
-ReactDOM.render(<App />, document.getElementById('app'))
+ReactDOM.render(
+    <App />
+  , document.getElementById('app'))
