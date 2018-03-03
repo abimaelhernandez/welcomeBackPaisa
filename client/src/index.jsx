@@ -17,6 +17,7 @@ class App extends React.Component{
 
   addThread(comment){
     $.ajax({
+      
       method:'POST',
       url:'/paisa',
       contentType: 'application/json',
@@ -29,7 +30,6 @@ class App extends React.Component{
   }
   getThread(){
     $.ajax({
-      console.log('hello')
       url:'/paisa',
       method:"GET",
       success: (results) =>{
