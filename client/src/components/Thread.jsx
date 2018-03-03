@@ -9,7 +9,7 @@ class Thread extends React.Component{
     return (
       <div className="replies">
         <p>{this.props.thread.comment}</p>
-        <button className="replyButn">Reply</button>
+        <button type="button" class="btn-success btn-md">Reply</button>
       </div>
     );
   }

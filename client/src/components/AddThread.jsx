@@ -32,6 +32,10 @@ class AddThread extends React.Component{
  render() {
     return (
       <div>
+      <div class="nav">
+      <a  type= "button"class="w3-bar-item w3-button btn-lg">Home</a>
+      <a  type= "button" class="w3-bar-item w3-button btn-lg">about us</a>
+       </div>
         <div className="header">
           <h1>WELCOME BACK</h1>
           <div className="startT">
@@ -40,9 +44,9 @@ class AddThread extends React.Component{
         </div>
       <textarea className="textAr" onChange={this.updateComment} value={this.state.comment}>
         Type Something!
-      </textarea>
+</textarea>
        <div>
-        <button className="threadButn" onClick={this.add}>Add Thread</button>
+        <button type="button" class="btn-danger btn-md" onClick={this.add}>Add Thread</button>
        </div>
       </div>
     );

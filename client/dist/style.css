@@ -2,13 +2,39 @@
 /*. is used for classnames*/
 body {
   shape-margin: "rectangle";
-  background: url("/sunset2.jpg");
+  background: url("/keepCalm&Code.jpg");
   position: sticky;
   background-repeat: no-repeat;
-  background-color: black;
-  background-position: top;
+  background-color: #333333;
+  background-position: center top;
+}
+h1{
+  position: absolute;
+  left:150px;
+  top: -70px;
+}
+h2{
+  position: relative;
+  left: 185px;
+  top: 300px;
+  color: white;
 }
 
+.nav{
+  position: absolute;
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 15px 15px 15px 15px;
+  top: -5px;
+}
+a{
+  color:white;
+}
+.replies{
+  position: absolute;
+  top: 270px;
+}
 
 .header {
   position: relative;
@@ -31,17 +57,21 @@ body {
 .textAr {
   font-family: sans-serif;
   position: relative;
-  width: 900px;
-  height: 150px;
+  width: 960px;
+  height: 202px;
   margin-top: 1em;
   margin-left: 7em;
+  top: 328px;
+  left: 125px;
 }
 
 
-.threadButn {
+.btn-danger {
   position: relative;
   margin-left: 65em;
   margin-top: 1em;
+  top: 285px;
+  left: 185px;
 }
 
 
@@ -49,16 +79,20 @@ body {
   font-family: 'Armata';startT
   font-size: 20px;
   margin: 100px;
-  height: 100px;
+  width: 700px;
+  height: 170px;
   background-color: white;
-  position: relative;startT
+  position: relative;
+  left:  250px;
 }
 
 
-.replyButn {
+.btn-success {
   position: relative;
   margin-left: 60em;
   margin-top: 6em;
+  left: -197px;
+  top:35px;
 }
 
 
