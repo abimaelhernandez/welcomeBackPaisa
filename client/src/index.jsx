@@ -17,7 +17,7 @@ class App extends React.Component{
 
   addThread(comment){
     $.ajax({
-      
+
       method:'POST',
       url:'/paisa',
       contentType: 'application/json',
@@ -42,7 +42,6 @@ class App extends React.Component{
     })
   }
 
-
   componentDidMount(){
     this.getThread()
   }
@@ -50,14 +49,12 @@ class App extends React.Component{
 
  render() {
     return (
-      <div>
-
-
-      <AddThread addThread={this.addThread} />
-      <ThreadList thread={this.state.thread} />
-
-  </div>
+ <div>
+  <AddThread addThread={this.addThread} />
+  <ThreadList thread={this.state.thread} />
+ </div>
     );
   }
 }
+
 ReactDOM.render(<App />, document.getElementById('app'))

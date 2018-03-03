@@ -32,21 +32,23 @@ class AddThread extends React.Component{
  render() {
     return (
       <div>
-      <div class="nav">
-      <a  type= "button"class="w3-bar-item w3-button btn-lg">Home</a>
-      <a  type= "button" class="w3-bar-item w3-button btn-lg">about us</a>
+      <div className="nav">
+      <a  type= "button" className="home">HOME</a>
+      <a  type= "button" className="INE">INE</a>
+      <a  type= "button" className="about">ABOUT US</a>
+      <a  type= "button" className="contact">CONTACT US</a>
        </div>
         <div className="header">
-          <h1>WELCOME BACK</h1>
-          <div className="startT">
-          <h2>START A THREAD</h2>
-          </div>
+           <h1>WELCOME BACK</h1>
+           <div className="startT">
+           <h2>START A THREAD</h2>
+           </div>
         </div>
       <textarea className="textAr" onChange={this.updateComment} value={this.state.comment}>
         Type Something!
 </textarea>
        <div>
-        <button type="button" class="btn-danger btn-md" onClick={this.add}>Add Thread</button>
+        <button type="button" className="btn-danger btn-md" onClick={this.add}>Add Thread</button>
        </div>
       </div>
     );

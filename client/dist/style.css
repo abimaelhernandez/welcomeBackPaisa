@@ -1,5 +1,7 @@
 /*# is used for id identification*/
+
 /*. is used for classnames*/
+
 body {
   shape-margin: "rectangle";
   background: url("/keepCalm&Code.jpg");
@@ -8,19 +10,21 @@ body {
   background-color: #333333;
   background-position: center top;
 }
-h1{
+
+h1 {
   position: absolute;
-  left:150px;
+  left: 150px;
   top: -70px;
 }
-h2{
+
+h2 {
   position: relative;
   left: 185px;
   top: 300px;
   color: white;
 }
 
-.nav{
+.nav {
   position: absolute;
   background-color: black;
   color: white;
@@ -28,10 +32,12 @@ h2{
   padding: 15px 15px 15px 15px;
   top: -5px;
 }
-a{
-  color:white;
+
+a {
+  color: white;
 }
-.replies{
+
+.replies {
   position: absolute;
   top: 270px;
 }
@@ -76,14 +82,14 @@ a{
 
 
 .replies {
-  font-family: 'Armata';startT
-  font-size: 20px;
+  font-family: 'Armata';
+  startT font-size: 20px;
   margin: 100px;
   width: 700px;
   height: 170px;
   background-color: white;
   position: relative;
-  left:  250px;
+  left: 250px;
 }
 
 
@@ -92,7 +98,7 @@ a{
   margin-left: 60em;
   margin-top: 6em;
   left: -197px;
-  top:35px;
+  top: 35px;
 }
 
 
