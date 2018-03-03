@@ -29,21 +29,23 @@ class AddThread extends React.Component{
    })
  }
 
- render(){
-   return (<div>
-
-       <textarea onChange={this.updateComment} value={this.state.comment}>
-
-
-       </textarea>
+ render() {
+    return (
+      <div>
+        <div className="header">
+          <h1>WELCOME BACK</h1>
+          <div className="startT">
+          <h2>START A THREAD</h2>
+          </div>
+        </div>
+      <textarea className="textAr" onChange={this.updateComment} value={this.state.comment}>
+        Type Something!
+      </textarea>
        <div>
-
-     <button onClick={this.add}>Add Thread </button>
+        <button className="threadButn" onClick={this.add}>Add Thread</button>
        </div>
-       </div>
-
-   )
- }
-
+      </div>
+    );
+  }
 }
 export default AddThread;
