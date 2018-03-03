@@ -29,6 +29,7 @@ class App extends React.Component{
   }
   getThread(){
     $.ajax({
+      console.log('hello')
       url:'/paisa',
       method:"GET",
       success: (results) =>{
@@ -54,7 +55,7 @@ class App extends React.Component{
 
       <AddThread addThread={this.addThread} />
       <ThreadList thread={this.state.thread} />
-      
+
   </div>
     );
   }
