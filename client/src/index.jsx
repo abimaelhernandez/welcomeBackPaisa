@@ -1,10 +1,10 @@
-import React , {BrowserRouter} from 'react';
+import React, {component} from 'react';
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
 import AddThread from './components/AddThread.jsx';
 import ThreadList from './components/ThreadList.jsx';
-import {Router, Route, Link, Switch, Redirect, IndexRoute,
-browserHistory} from 'react-router'
+import {BrowserRouter, Route, NavLink, IndexRoute, hashHistory,
+browserHistory} from 'react-router-dom'
 
 class App extends React.Component{
   constructor(props){
@@ -52,20 +52,18 @@ class App extends React.Component{
 
  render() {
     return (
-    <BrowserRouter>
-
-
-      <div>
-        <AddThread addThread={this.addThread} />
-
-
-        <ThreadList thread={this.state.thread} />
-
-      </div>
-    </BrowserRouter>
+      <BrowserRouter>
+        <div>
+          <ul>
+            <AddThread addThread={this.addThread} />
+            <li><NavLink to ="/stayHere">Thread</NavLink></li>
+          </ul>
+            <div>
+              <Route path="/stayHere" render={(props) => <ThreadList {...props} thread={this.state.thread}/> } />
+            </div>
+        </div>
+      </BrowserRouter>
     );
   }
 }
-ReactDOM.render(
-    <App />
-  , document.getElementById('app'))
+ReactDOM.render(<App />, document.getElementById('app'))
